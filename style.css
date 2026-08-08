@@ -1,0 +1,606 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+   
+    font-family: Arial, sans-serif;
+    background: #0b0f19;
+    color: #f5f5f5;
+    min-height: 100vh;
+}
+
+header {
+    background: #080d18;
+    padding: 30px 20px;
+    text-align: center;
+    color: white;
+    border-bottom: 4px solid #b22234;
+}
+
+header h1 {
+    font-size: 36px;
+    margin: 10px 0;
+    color: white;
+}
+
+header p {
+    color: white;
+    font-size: 18px;
+    margin: 0;
+}
+
+
+.container {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+}
+
+.card {
+    background: #151b28;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #b22234;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #8f1828;
+}
+
+@media (max-width: 600px) {
+    .container {
+        margin: 15px auto;
+        padding: 10px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
+.price-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0 25px;
+    padding: 18px 20px;
+    background: #0b1f4d;
+    border-radius: 10px;
+    color: white;
+    border-left: 6px solid #b22234;
+}
+
+.price-box span {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.price-box strong {
+    font-size: 26px;
+    color: white;
+}.logo {
+    display: block;
+    width: 220px;
+    max-width: 90%;
+    height: auto;
+    margin: 0 auto 15px;
+}.option-buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 22px;
+}
+
+.option-btn {
+    width: 100%;
+    padding: 14px 10px;
+    border: 2px solid #0b1f4d;
+    border-radius: 9px;
+    background: white;
+    color: #0b1f4d;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.option-btn:hover {
+    background: #f0f3f8;
+}
+
+.option-btn.selected {
+    background: #0b1f4d;
+    color: white;
+    border-color: #b22234;
+    box-shadow: 0 0 0 2px #b22234;
+}
+
+.device-buttons {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 600px) {
+    .option-buttons {
+        grid-template-columns: 1fr;
+    }
+
+    .device-buttons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}.plan-buttons .option-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    min-height: 75px;
+}
+
+.plan-buttons .option-btn strong {
+    font-size: 17px;
+}
+
+.plan-buttons .option-btn span {
+    font-size: 15px;
+    font-weight: normal;
+}.device-buttons .option-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    min-height: 75px;
+}
+
+.device-buttons .device-price {
+    font-size: 16px;
+    font-weight: bold;
+}.order-summary {
+    margin-top: 20px;
+    padding: 20px;
+    background: #f4f6fa;
+    border: 2px solid #0b1f4d;
+    border-radius: 10px;
+}
+
+.order-summary h3 {
+    margin-bottom: 15px;
+    color: #0b1f4d;
+    text-align: center;
+    font-size: 21px;
+}
+
+.order-summary p {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.order-summary .summary-total {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 2px solid #ccc;
+    font-size: 20px;
+    color: #b22234;
+}
+
+.order-summary .summary-total span {
+    font-weight: bold;
+}.confirmation-card {
+    text-align: center;
+    border-top: 6px solid #b22234;
+    border-bottom: 6px solid #0b1f4d;
+}
+
+.confirmation-card h2 {
+    color: #0b1f4d;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.confirmation-card p {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.confirmation-message {
+    margin: 25px 0;
+    padding: 18px;
+    background: #f4f6fa;
+    border-radius: 10px;
+    border: 2px solid #0b1f4d;
+    color: #0b1f4d;
+}
+
+.return-button {
+    display: inline-block;
+    padding: 15px 25px;
+    background: #b22234;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.return-button:hover {
+    background: #8f1828;
+}input,
+select,
+textarea {
+    background: #202838;
+    color: white;
+    border-color: #3b465a;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #9da6b5;
+}
+
+label {
+    color: white;
+}.order-summary {
+    background: #202838;
+    border-color: #3b465a;
+}
+
+.order-summary h3 {
+    color: white;
+}
+
+.order-summary p {
+    color: #d5d9e0;
+}
+
+.order-summary .summary-total {
+    color: #ff4b5c;
+}.price-box {
+    background: #0b1f4d;
+    color: white;
+    border-left-color: #b22234;
+}
+
+.price-box span,
+.price-box strong {
+    color: white;
+}.option-btn {
+    background: #202838;
+    color: white;
+    border-color: #3b465a;
+}
+
+.option-btn:hover {
+    background: #293448;
+    border-color: #b22234;
+}
+
+.option-btn.selected {
+    background: #0b1f4d;
+    color: white;
+    border-color: #b22234;
+}.card h2 {
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.card > p {
+    color: #cbd2dc;
+    text-align: center;
+}button[type="submit"] {
+    width: 100%;
+    padding: 16px;
+    margin-top: 20px;
+    background: #b22234;
+    color: white;
+    border: 2px solid #ff4b5c;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button[type="submit"]:hover {
+    background: #8f1828;
+    transform: translateY(-1px);
+}.discord-button {
+    display: block;
+    width: 100%;
+    margin: 15px 0 20px;
+    padding: 14px;
+    background: #5865F2;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.discord-button:hover {
+    background: #4752C4;
+    transform: translateY(-1px);
+}.payment-buttons {
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 20px;
+}
+
+.payment-buttons .option-btn {
+    min-height: 55px;
+    font-size: 16px;
+}
+
+.payment-buttons .option-btn.selected {
+    background: #0b1f4d;
+    border-color: #b22234;
+    box-shadow: 0 0 0 2px #b22234;
+}
+
+@media (max-width: 600px) {
+    .payment-buttons {
+        grid-template-columns: 1fr;
+    }
+}/* APTV Thank You Page */
+
+.thank-you-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    text-align: center;
+}
+
+.thank-you-logo {
+    width: 220px;
+    max-width: 80%;
+    margin-bottom: 25px;
+}
+
+.thank-you-card {
+    width: 100%;
+    max-width: 650px;
+    background: #151b28;
+    border: 2px solid #b22234;
+    border-radius: 18px;
+    padding: 40px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+}
+
+.success-icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 20px;
+    border-radius: 50%;
+    background: #0b1f4d;
+    border: 3px solid #b22234;
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    line-height: 64px;
+}
+
+.thank-you-card h1 {
+    color: white;
+    font-size: 36px;
+    margin: 10px 0 15px;
+}
+
+.thank-you-card p {
+    color: #d7dce5;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+.thank-you-main {
+    font-size: 20px !important;
+    color: white !important;
+}
+
+.thank-you-box {
+    margin: 25px 0;
+    padding: 20px;
+    background: #0b0f19;
+    border-left: 4px solid #b22234;
+    border-radius: 10px;
+    color: #d7dce5;
+    line-height: 1.5;
+}
+
+.return-button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background: #b22234;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.return-button:hover {
+    background: #8f1828;
+}
+
+.thank-you-page .discord-button {
+    width: 100%;
+    margin-top: 15px;
+}
+
+.copyright {
+    margin-top: 25px;
+    color: #8f98a8;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+
+    .thank-you-card {
+        padding: 25px 20px;
+    }
+
+    .thank-you-card h1 {
+        font-size: 30px;
+    }
+
+    .thank-you-logo {
+        width: 180px;
+    }
+}/* APTV Mobile Optimization */
+
+@media (max-width: 600px) {
+
+    body {
+        font-size: 15px;
+    }
+
+    header {
+        padding: 20px 15px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 15px;
+    }
+
+    .logo {
+        width: 180px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .card {
+        padding: 22px 16px;
+        border-radius: 12px;
+    }
+
+    .card h2 {
+        font-size: 24px;
+    }
+
+    input,
+    select,
+    textarea {
+        font-size: 16px;
+        padding: 13px;
+    }
+
+    .option-buttons {
+        grid-template-columns: 1fr 1fr;
+        gap: 8px;
+    }
+
+    .option-btn {
+        min-height: 65px;
+        padding: 10px 6px;
+        font-size: 14px;
+    }
+
+    .plan-buttons .option-btn strong {
+        font-size: 15px;
+    }
+
+    .plan-buttons .option-btn span,
+    .device-buttons .device-price {
+        font-size: 13px;
+    }
+
+    .payment-buttons {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .price-box {
+        padding: 18px;
+    }
+
+    .price-box strong {
+        font-size: 25px;
+    }
+
+    .order-summary {
+        padding: 16px;
+    }
+
+    .order-summary p {
+        font-size: 14px;
+    }
+
+    button[type="submit"] {
+        min-height: 55px;
+        font-size: 17px;
+    }
+
+    .discord-button {
+        min-height: 50px;
+        line-height: 22px;
+    }
+}

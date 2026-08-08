@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+    <img src="APTV.png" alt="APTV Services Digital TV" class="logo">
+
+    <h1>APTV</h1>
+
+    <p>Official Order Portal</p>
+</header>
+
+    <div class="container">
+
+        <div class="card">
+
+            <h2>Place Your Order</h2>
+
+            <p>
+                Complete the form below to submit your APTV order.
+            </p>
+
+            <form action="https://formspree.io/f/mrpzeyyw" method="POST">
+<input type="hidden" name="_next" value="thank-you.html">
+                <label for="name">Full Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your full name"
+                    required
+                >
+
+                <label for="email">Email Address</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label for="phone">Phone / WhatsApp</label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                >
+
+             <label>Choose Your Plan</label>
+
+<div class="option-buttons plan-buttons">
+
+    <button type="button" class="option-btn" data-plan="1 Month">
+        <strong>1 MONTH</strong>
+        <span>$20 – $40</span>
+    </button>
+
+    <button type="button" class="option-btn" data-plan="3 Months">
+        <strong>3 MONTHS</strong>
+        <span>$40 – $80</span>
+    </button>
+
+    <button type="button" class="option-btn" data-plan="6 Months">
+        <strong>6 MONTHS</strong>
+        <span>$70 – $150</span>
+    </button>
+
+    <button type="button" class="option-btn" data-plan="12 Months">
+        <strong>12 MONTHS</strong>
+        <span>$130 – $250</span>
+    </button>
+
+</div>
+
+<input type="hidden" id="plan" name="plan" required>
+<label>Choose Number of Devices</label>
+
+<div class="option-buttons device-buttons">
+    <button type="button" class="option-btn" data-device="1 Device">1 Device</button>
+    <button type="button" class="option-btn" data-device="2 Devices">2 Devices</button>
+    <button type="button" class="option-btn" data-device="3 Devices">3 Devices</button>
+    <button type="button" class="option-btn" data-device="4 Devices">4 Devices</button>
+    <button type="button" class="option-btn" data-device="5 Devices">5 Devices</button>
+</div>
+
+<input type="hidden" id="devices" name="devices" required>
+<input type="hidden" id="total-price" name="total_price" value="$0.00">
+<div class="price-box">
+    <span>Total Price</span>
+    <strong id="price">$0.00</strong>
+</div>
+<div class="order-summary">
+    <h3>Your Order</h3>
+
+    <p>
+        <strong>Plan:</strong>
+        <span id="summary-plan">Not selected</span>
+    </p>
+
+    <p>
+        <strong>Devices:</strong>
+        <span id="summary-devices">Not selected</span>
+    </p>
+
+    <p class="summary-total">
+        <strong>Total:</strong>
+        <span id="summary-total">$0.00</span>
+    </p>
+</div>
+
+</div>
+ <div class="option-buttons payment-buttons">
+
+    <button type="button" class="option-btn" data-payment="Cash App">
+        Cash App
+    </button>
+
+    <button type="button" class="option-btn" data-payment="Zelle">
+        Zelle
+    </button>
+
+    <button type="button" class="option-btn" data-payment="PayPal">
+        PayPal
+    </button>
+
+    <button type="button" class="option-btn" data-payment="Invoice">
+        Invoice
+    </button>
+
+</div>
+
+<input type="hidden" id="payment" name="payment" required>
+
+</div>
+
+<input type="hidden" id="payment" name="payment" required>              
+<a
+    href="https://discord.gg/vufUwr9aj"
+    class="discord-button"
+    target="_blank"
+>
+    Join Our Discord
+</a>
+                <label for="notes">Additional Notes</label>
+                <textarea
+                    id="notes"
+                    name="notes"
+                    rows="4"
+                    placeholder="Anything else we should know?"
+                ></textarea>
+
+                <button type="submit">
+                    Submit Order 🇺🇸
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+<script src="script.js"></script>
+
+</body>
+</html><label for="name">Full Name</label><br>
+        <input type="text" id="name" name="name" required>
+        <br><br>
+
+        <label for="email">Email Address</label><br>
+        <input type="email" id="email" name="email" required>
+        <br><br>
+
+        <label for="phone">Phone / WhatsApp</label><br>
+        <input type="tel" id="phone" name="phone">
+        <br><br>
+
+        <label for="plan">Subscription</label><br>
+        <select id="plan" name="plan" required>
+            <option value="">Select a plan</option>
+            <option value="1 Month">1 Month</option>
+            <option value="3 Months">3 Months</option>
+            <option value="6 Months">6 Months</option>
+            <option value="12 Months">12 Months</option>
+        </select>
+        <div class="price-box">
+    <span>Total Price</span>
+    <strong id="price">$0.00</strong>
+</div>
+        <br><br>
+
+        <label for="devices">Number of Device
