@@ -603,4 +603,19 @@ button[type="submit"]:hover {
         min-height: 50px;
         line-height: 22px;
     }
+}.submit-button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 16px;
+    border: 2px solid #e51e3e;
+    border-radius: 8px;
+    background: #c51f3a;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.submit-button:hover {
+    background: #e51e3e;
 }
