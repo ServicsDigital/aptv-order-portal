@@ -664,3 +664,26 @@ button[type="submit"]:hover {
     background: #d90429;
     border-color: #ffffff;
 }
+/* Existing customer field */
+#existingCustomerField {
+    margin: 10px auto 20px;
+    max-width: 100%;
+    text-align: left;
+}
+
+#existingCustomerField label {
+    display: block;
+    margin-bottom: 8px;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+}
+
+#existingCustomerField input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+}
