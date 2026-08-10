@@ -178,7 +178,7 @@ button:hover {
 
 @media (max-width: 600px) {
     .option-buttons {
-        grid-template-columns: 1fr;
+        grid-template-columns: 2fr;
     }
 
     .device-buttons {
