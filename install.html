@@ -1,1 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APTV App Installation Center</title>
 
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #0b0f19;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      padding: 35px 20px 25px;
+      background: linear-gradient(180deg, #111827, #0b0f19);
+    }
+
+    .flag {
+      font-size: 42px;
+      margin-bottom: 10px;
+    }
+
+    h1 {
+      margin: 5px 0;
+      font-size: 30px;
+    }
+
+    .subtitle {
+      color: #b8c0cc;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 25px 18px 50px;
+    }
+
+    .section-title {
+      font-size: 22px;
+      margin: 10px 0 25px;
+    }
+
+    .devices {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 16px;
+    }
+
+    .device {
+      background: #151b28;
+      border: 1px solid #293244;
+      border-radius: 15px;
+      padding: 25px 15px;
+      text-decoration: none;
+      color: white;
+      display: block;
+      transition: 0.2s;
+    }
+
+    .device:hover {
+      transform: translateY(-3px);
+      border-color: #3b82f6;
+      background: #1b2434;
+    }
+
+    .icon {
+      font-size: 42px;
+      margin-bottom: 12px;
+    }
+
+    .device h2 {
+      font-size: 18px;
+      margin: 8px 0;
+    }
+
+    .device p {
+      color: #aeb7c5;
+      font-size: 14px;
+      margin: 0;
+      line-height: 1.5;
+    }
+
+    .buttons {
+      margin-top: 30px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 22px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      background: #1d4ed8;
+    }
+
+    .button:hover {
+      background: #2563eb;
+    }
+
+    .help {
+      margin-top: 35px;
+      padding: 25px 18px;
+      background: #151b28;
+      border-radius: 15px;
+      border: 1px solid #293244;
+    }
+
+    .help h2 {
+      margin-top: 0;
+    }
+
+    footer {
+      padding: 25px;
+      color: #7f8a9b;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <div class="flag">🇺🇸</div>
+    <h1>ARENA PULSE TV</h1>
+    <div class="subtitle">APTV App Installation Center</div>
+  </header>
+
+  <main class="container">
+
+    <div class="section-title">
+      📲 Select Your Device
+    </div>
+
+    <div class="devices">
+
+      <a href="#firestick" class="device">
+        <div class="icon">🔥</div>
+        <h2>Amazon Firestick / Fire TV</h2>
+        <p>Installation instructions for Fire TV devices.</p>
+      </a>
+
+      <a href="#onn" class="device">
+        <div class="icon">📺</div>
+        <h2>ONN 4K Pro / Android TV</h2>
+        <p>Setup instructions for ONN and Android TV devices.</p>
+      </a>
+
+      <a href="#android-phone" class="device">
+        <div class="icon">📱</div>
+        <h2>Android Phone</h2>
+        <p>Install APTV on your Android smartphone.</p>
+      </a>
+
+      <a href="#android-tablet" class="device">
+        <div class="icon">📱</div>
+        <h2>Android Tablet</h2>
+        <p>Install APTV on your Android tablet.</p>
+      </a>
+
+      <a href="#android-tv" class="device">
+        <div class="icon">📺</div>
+        <h2>Android Smart TV</h2>
+        <p>Installation instructions for Android Smart TVs.</p>
+      </a>
+
+      <a href="#apple" class="device">
+        <div class="icon">🍎</div>
+        <h2>Apple Devices</h2>
+        <p>Setup information for supported Apple devices.</p>
+      </a>
+
+    </div>
+
+    <div class="help">
+      <h2>🆘 Need Help?</h2>
+      <p>
+        Having trouble installing APTV? Our support team is here to help.
+      </p>
+    </div>
+
+    <div class="buttons">
+      <a href="index.html" class="button">🏠 Back to APTV</a>
+    </div>
+
+  </main>
+
+  <footer>
+    © 2026 Arena Pulse TV • APTV
+  </footer>
+
+</body>
+</html>
