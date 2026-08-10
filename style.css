@@ -710,3 +710,206 @@ button[type="submit"]:hover {
     grid-template-columns: repeat(3, 1fr) !important;
     gap: 10px !important;
 }
+/* ===== APTV MODERN OPTION CARDS ===== */
+
+.option-buttons {
+    display: grid;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.device-buttons {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+/* Subscription cards */
+.plan-buttons {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* All option cards */
+.option-btn {
+    min-height: 74px;
+    padding: 14px 10px;
+    border-radius: 10px;
+    border: 2px solid #35445d;
+    background: #202a3a;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.option-btn:hover {
+    border-color: #e21d35;
+    transform: translateY(-2px);
+}
+
+.option-btn.selected,
+.option-btn.active {
+    background: #102a63;
+    border-color: #d51f38;
+    box-shadow: 0 0 0 1px #d51f38;
+}
+
+/* Price box */
+.price-box {
+    margin-top: 12px;
+    min-height: 66px;
+    padding: 0 25px;
+    border-left: 5px solid #d51f38;
+    border-radius: 10px;
+    background: #0d2860;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+.price-box span {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.price-box strong {
+    font-size: 26px;
+    font-weight: 800;
+}
+
+/* ===== CENTER THE TWO BOTTOM BUTTONS ===== */
+
+.form-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    width: 100%;
+    margin: 25px auto 0;
+}
+
+.form-actions button {
+    min-width: 265px;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .device-buttons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .plan-buttons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-actions {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .form-actions button {
+        width: 100%;
+        min-width: 0;
+    }
+}/* ===== APTV MODERN OPTION CARDS ===== */
+
+.option-buttons {
+    display: grid;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.device-buttons {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+/* Subscription cards */
+.plan-buttons {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* All option cards */
+.option-btn {
+    min-height: 74px;
+    padding: 14px 10px;
+    border-radius: 10px;
+    border: 2px solid #35445d;
+    background: #202a3a;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.option-btn:hover {
+    border-color: #e21d35;
+    transform: translateY(-2px);
+}
+
+.option-btn.selected,
+.option-btn.active {
+    background: #102a63;
+    border-color: #d51f38;
+    box-shadow: 0 0 0 1px #d51f38;
+}
+
+/* Price box */
+.price-box {
+    margin-top: 12px;
+    min-height: 66px;
+    padding: 0 25px;
+    border-left: 5px solid #d51f38;
+    border-radius: 10px;
+    background: #0d2860;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #ffffff;
+}
+
+.price-box span {
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.price-box strong {
+    font-size: 26px;
+    font-weight: 800;
+}
+
+/* ===== CENTER THE TWO BOTTOM BUTTONS ===== */
+
+.form-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    width: 100%;
+    margin: 25px auto 0;
+}
+
+.form-actions button {
+    min-width: 265px;
+}
+
+/* Mobile */
+@media (max-width: 700px) {
+    .device-buttons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .plan-buttons {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .form-actions {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .form-actions button {
+        width: 100%;
+        min-width: 0;
+    }
+}
