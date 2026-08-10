@@ -136,10 +136,11 @@ button:hover {
     color: white;
 }.logo {
     display: block;
-    width: 220px;
+    width: 420px;
     max-width: 90%;
     height: auto;
     margin: 0 auto 15px;
+}
 }.option-buttons {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
