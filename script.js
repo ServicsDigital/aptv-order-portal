@@ -207,7 +207,17 @@ form.addEventListener("submit", async (event) => {
 });
     
 ;
+document.querySelectorAll('input[name="customerType"]').forEach(radio => {
+    radio.addEventListener('change', function () {
+        const existingField = document.getElementById('existingCustomerField');
 
+        if (this.value === 'existing') {
+            existingField.style.display = 'block';
+        } else {
+            existingField.style.display = 'none';
+        }
+    });
+});
 
 updateDevicePrices();
 updatePrice();
