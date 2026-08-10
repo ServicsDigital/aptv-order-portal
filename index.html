@@ -56,12 +56,12 @@
 <div class="customer-type">
     <h3>Customer Type</h3>
     <label>
-        <input type="radio" name="customerType" value="new" required>
+    <input type="radio" name="customerType" value="new" required onchange="document.getElementById('existingCustomerField').style.display='none';">
         🆕 New Customer
     </label>
 
     <label>
-        <input type="radio" name="customerType" value="existing">
+       <input type="radio" name="customerType" value="existing" onchange="document.getElementById('existingCustomerField').style.display='block';">
         👤 Existing Customer
     </label>
     <div id="existingCustomerField" style="display:none; margin-bottom:20px;">
