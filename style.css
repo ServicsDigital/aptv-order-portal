@@ -692,3 +692,15 @@ button[type="submit"]:hover {
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
 }
+/* Final plan and device layout fix */
+.plan-buttons {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 10px !important;
+}
+
+.device-buttons {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 10px !important;
+}
