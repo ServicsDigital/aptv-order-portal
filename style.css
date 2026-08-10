@@ -687,22 +687,3 @@ button[type="submit"]:hover {
     box-sizing: border-box;
     padding: 12px;
 }
-/* Plan and device button layout */
-.plan-buttons {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-}
-
-.device-buttons {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-}
-
-@media (max-width: 600px) {
-    .plan-buttons,
-    .device-buttons {
-        grid-template-columns: 1fr;
-    }
-}
