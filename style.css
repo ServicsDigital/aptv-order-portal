@@ -704,3 +704,9 @@ button[type="submit"]:hover {
     grid-template-columns: repeat(3, 1fr) !important;
     gap: 10px !important;
 }
+/* Final device layout fix */
+.device-buttons {
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 10px !important;
+}
