@@ -618,4 +618,20 @@ button[type="submit"]:hover {
 
 .submit-button:hover {
     background: #e51e3e;
+}.install-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+}
+
+.install-button {
+    display: inline-block;
+    padding: 10px 16px;
+    background: #c8102e;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 14px;
 }
